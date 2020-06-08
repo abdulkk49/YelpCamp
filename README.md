@@ -1,8 +1,6 @@
 # YelpCamp
 Website for campsite booking and photogallery
 
-# YelpCamp
-
 ## Initial Setup
 * Add Landing Page
 * Add Campgrounds Page that lists all campgrounds
