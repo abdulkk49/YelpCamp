@@ -9,18 +9,15 @@ var express     = require("express"),
     Campground  = require("./models/campground"),
     Comment     = require("./models/comment"),
     User        = require("./models/user"),
-    seedDB      = require("./seeds");
-    // connectDB   = require("./connection");
+    seedDB      = require("./seeds"),
+    connectDB   = require("./connection");
 // requiring routes
 var commentRoutes    = require("./routes/comments"),
     campgroundRoutes = require("./routes/campgrounds"),
     indexRoutes      = require("./routes/index")
     
-// connectDB();
-mongoose.connect(process.env.DATABASEURL, {
-        useUnifiedTopology : true,
-        useNewUrlParser : true
-  });
+connectDB();
+
 app.use(bodyParser.urlencoded({extended: true}));       // for parsing post requests from forms
 app.set("view engine", "ejs");                          // avoid writing ejs extension
 app.use(express.static(__dirname + "/public"));         // serve publc directory
