@@ -1,6 +1,6 @@
 # YelpCamp
-Hosted using Heroku app : https://hidden-atoll-52805.herokuapp.com/   
-Website for campsite booking and photogallery
+Hosted using Heroku app:  
+<a href="https://hidden-atoll-52805.herokuapp.com/" target="_blank">Website for campsite booking and photogallery</a>
 
 ## Initial Setup
 * Add Landing Page
