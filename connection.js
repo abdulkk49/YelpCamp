@@ -1,6 +1,6 @@
 var mongoose    = require("mongoose");
 
-const URI = "mongodb+srv://abdulkk49:<password>@yelpcamp-bkoyn.mongodb.net/<dbname>?retryWrites=true&w=majority";   
+const URI = "mongodb+srv://abdulkk49:abdulkk49@yelpcamp-bkoyn.mongodb.net/yelp_camp?retryWrites=true&w=majority";   
 
 const connectDB = async() =>{
     await mongoose.connect(URI, {
